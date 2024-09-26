@@ -8,6 +8,7 @@ import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
 import {Authenticator} from '@aws-amplify/ui-react'
+import DigitalClock from './Components/DigitalClock'
 
 Amplify.configure(outputs);
 
@@ -40,7 +41,7 @@ export default function App() {
     <Authenticator>
       {({signOut,user}) => (
         <main>  
-        <h1>My todos</h1>
+        <h1>Tareas de {user?.signInDetails?.loginId}</h1>
         <button onClick={createTodo}>+ new</button>
         <ul>
           {todos.map((todo) => (
@@ -50,6 +51,7 @@ export default function App() {
         <button onClick={signOut}>
           Sign Out
         </button>
+        <DigitalClock />
         <div>
           🥳 App successfully hosted. Try creating a new todo.
           <br />
