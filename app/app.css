@@ -1,12 +1,10 @@
 body {
     margin: 0;
-    background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+    background:linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
     display: flex;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     height: 100vh;
     width: 100vw;
-    justify-content: center;
-    align-items: center;
   }
   
   main {
@@ -63,3 +61,122 @@ body {
     font-weight: 800;
     text-decoration: none;
   }
+  .App{
+    width: 100vw;
+    height: 100vw;
+    background-color:linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+}
+.Content-App{
+  width: 80%;
+  float:right;
+}
+.SideBar-App{
+  float: left;
+  width: 20%;
+}
+
+
+.sidebar{
+  height: 100vw;
+  background-color:cornflowerblue;
+  border: 1px solid black;
+}
+
+
+.sidebar .digital-clock{
+  text-align: center;
+}
+
+
+
+
+.sidebar-list{
+  height: auto;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+}
+
+.sidebar-list .row-nav{
+  width: 100%;
+  height: 60px;
+  border: 0.25px solid grey;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  color: rgb(87, 84, 179);
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidebar-list #active{
+  background-color: darkblue ;
+}
+.sidebar-list .row-nav:hover{
+  cursor: pointer;
+  background-color: darkblue;
+
+}
+.sidebar-list .logo-sidebar{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.row-nav #icon{
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.row-nav #title{
+  flex: 70%;
+}
+
+.Header-App{
+  height: 80px;
+  width: 80%;
+  float: right;
+  background-color: white
+}
+
+.header-content{
+  text-align: left;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.header-content .header-buscar{
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  flex: content;
+}
+
+.header-content .header-alertas{
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+.header-content .header-usuario{
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+.header-content .header-ayuda{
+  display:inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+.header-content .header-whatsapp{
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}

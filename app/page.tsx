@@ -9,6 +9,8 @@ import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
 import {Authenticator} from '@aws-amplify/ui-react'
 import DigitalClock from './Components/DigitalClock'
+import SideBar from './Components/Sidebar'
+import Header from "./Components/Header"
 
 Amplify.configure(outputs);
 
@@ -41,6 +43,10 @@ export default function App() {
     <Authenticator>
       {({signOut,user}) => (
         <main>  
+          <div className="App">
+        <div className="SideBar-App"><SideBar /></div>
+        <div className="Header-App"> <Header /></div>
+        <div className="Content-App">
         <h1>Tareas de {user?.signInDetails?.loginId}</h1>
         <button onClick={createTodo}>+ new</button>
         <ul>
@@ -58,6 +64,8 @@ export default function App() {
           <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
             Review next steps of this tutorial.
           </a>
+        </div>
+        </div>
         </div>
         </main>
       )}
