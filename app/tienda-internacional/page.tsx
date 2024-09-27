@@ -3,9 +3,9 @@ import React from "react"
 function TiendaInternacional(){
 
 return(
-    <>
-    <h1>TiendaInternacional</h1>
-    </>
+    <div>
+    <h1>Tienda Internacional</h1>
+    </div>
 )
 };
 export default TiendaInternacional

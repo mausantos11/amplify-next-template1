@@ -7,10 +7,10 @@ import SideBar from '../Components/Sidebar'
 function Dashboard(){
 
 return(
-    <>
+    <div>
     <SideBar></SideBar>
     <h1> Reportes</h1>
-    </>
+    </div>
 )
 };
 export default Dashboard

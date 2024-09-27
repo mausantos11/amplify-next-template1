@@ -7,10 +7,10 @@ import SideBar from '../Components/Sidebar'
 function Empresa(){
 
 return(
-    <>
+    <div>
     <SideBar></SideBar>
     <h1> Empresa</h1>
-    </>
+    </div>
 )
 };
 export default Empresa
